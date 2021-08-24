@@ -15,7 +15,7 @@ android {
     def patch = versionProps['VERSION_PATCH'].toInteger()
     def build = versionProps['VERSION_BUILD'].toInteger()
     def mVersionName = "v${major}.${minor}.${patch} Build: ${build}"
-    def mApplicationId = "com.digitalruiz.pizzadriver"
+    def mApplicationId = "com.digitalruiz.testcompose"
     def version_name = "v$major.$minor.$patch.$build"
 
     defaultConfig {
