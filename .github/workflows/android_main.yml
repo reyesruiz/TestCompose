@@ -67,6 +67,9 @@ jobs:
           property: 'VERSION_BUILD'
           value: ${{ steps.new_version_build.outputs.value }}
 
+      - name: Make gradlew executable
+        run: chmod +x ./gradlew
+
       - name: Build all artifacts
         id: buildAllApks
         run: ./gradlew build assembleRelease bundleRelease
